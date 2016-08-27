@@ -1,9 +1,9 @@
 import React from 'react';
-import Landing from '../components/Landing';
+import Topics from '../components/Topics';
 
 const App = () => (
   <div>
-    <Landing />
+    <Topics />
   </div>
 );
 

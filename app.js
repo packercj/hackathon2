@@ -9,7 +9,7 @@ mongoose.connect( 'mongodb://localhost/hackathon' );
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var topic = require('./routes/Topic');
+var topics = require('./routes/topics');
 var admin = require('./routes/admin');
 
 var app = express();
@@ -37,7 +37,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/Topic', topic);
+app.use('/topics', topics);
 app.use('/admin', admin);
 
 // catch 404 and forward to error handler
