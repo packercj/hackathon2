@@ -1,0 +1,23 @@
+{
+  "name": "hackathon",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Group"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.5",
+    "moment": "^2.11.2"
+  }
+}
