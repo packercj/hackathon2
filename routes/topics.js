@@ -19,6 +19,13 @@ router.get('/:id/items', (req, res) => {
 	Item.find({ topicId: req.params.id}, (err, items) => {
 		res.json(items);
 	})
+// router.get('/', function(req, res, next) {
+//   var query = Card.find({});
+// 	query.where('listId', req.query.listId);
+// 	query.exec( function( err, cards, count ) {
+// 	  res.json(item);
+// 	  });
+// 	});
 })
 
 module.exports = router;

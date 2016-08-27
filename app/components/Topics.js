@@ -21,12 +21,23 @@ class Topics extends React.Component {
 
 	render() {
 		let topics = this.state.topics.map( topic => {
-			return(<a href={`/topics/${topic._id}`}><div className='col s4 card'><div className='card-content'><Topic {...topic} /></div></div></a>)
+			return(
+        <a href={`/topics/${topic._id}`}>
+          <div className='col s4 card'>
+            <div className='card-content'>
+              <Topic {...topic} />
+            </div>
+          </div>
+        </a>
+      )
 		})
 		return (
-			<div className='row'>
-				{topics}
-			</div>
+
+			<div className='container'>
+        <div >
+				    {topics}
+			  </div>
+      </div>
 		)
 	}
 }
